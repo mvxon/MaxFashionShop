@@ -1,1 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/max_fashion_shop
+    username: postgres
+    password: 1
+  flyway:
+    baseline-on-migrate: true
 
