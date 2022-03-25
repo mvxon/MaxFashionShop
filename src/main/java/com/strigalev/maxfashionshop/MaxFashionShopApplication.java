@@ -9,10 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class MaxFashionShopApplication {
 
     public static void main(String[] args) {
-
-        ConfigurableApplicationContext context= SpringApplication.run(MaxFashionShopApplication.class, args);
-        PasswordEncoder passwordEncoder = context.getBean(PasswordEncoder.class);
-        System.out.println(passwordEncoder.encode("pass"));
+        SpringApplication.run(MaxFashionShopApplication.class, args);
     }
 
 }
